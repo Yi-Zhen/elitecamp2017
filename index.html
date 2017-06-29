@@ -9,12 +9,40 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+
+		<!-- for menu -->
+		<script src="http://code.jquery.com/jquery-1.7.0.js"></script>
+      	<script src="dist/jquery.mmenu.js"></script>
+      	<script src="dist/jquery.mmenu.pagescroll.js" type="text/javascript"></script>
+      	<link rel="stylesheet" href="dist/jquery.mmenu.css" />
+      	<link href="dist/jquery.mmenu.pagedim.css" type="text/css" rel="stylesheet" />
+
+      	<script type="text/javascript">
+         jQuery(document).ready(function( $ ){
+            $("#ham").mmenu({
+            	extensions 	: [ "pagedim-black" ],
+            	"pageScroll": true         	 
+            });
+         });
+        </script>
+
+
 	</head>
 	<body>
 
 		<!-- Header -->
-			<header id="header">
-				<h1>2017 臺大北大兩岸菁英參訪團</h1>
+			<header id="header" class="content mm-slideout">
+				<span class="toggle">
+				<a href="#ham" style="float:left;" >
+               			<div class="container" >
+                  			<div class="bar1"></div>
+                  			<div class="bar2"></div>
+                  			<div class="bar1"></div>
+                  		</div>
+
+            	</a>
+            	</span>
+				<h1 style="float:left">2017 臺大北大兩岸菁英參訪團</h1>
 				<nav>
 					<ul>
 						<li><a href="#intro">Intro</a></li>
@@ -24,10 +52,26 @@
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>
+				<!-- menu -->
+				<nav id="ham" style="width: 50%;">
+            	<ul>
+               			<li ><a href="#intro">Intro</a></li>
+						<li><a href="#sponsor">Sponsor</a></li>
+						<li><a href="#gratitude">Gratitude</a></li>
+						<li><a href="#journey"><span>Journey</span></a>
+							<ul>
+                    			<li><a href="#museum">國立故宮博物院</a></li>
+                     			
+                  			</ul>
+                  		</li>
+						<li><a href="#contact">Contact</a></li>
+              
+	            </ul>
+
 			</header>
 
 		<!-- banner -->
-			<section id="banner" class="main style1 dark fullscreen">
+			<section id="banner" class="main style1 dark fullscreen mm-slideout">
 				<div class="content">
 					<header>
 						<h3>2017<br>臺大北大兩岸菁英參訪團</h3>
@@ -44,7 +88,7 @@
 			</section>
 
 		<!-- Intro -->
-			<section id="intro" class="main style2 right dark fullscreen">
+			<section id="intro" class="main style2 right dark fullscreen mm-slideout">
 				<div class="content box style2">
 					<header>
 						<h2>Intro</h2>
@@ -59,7 +103,7 @@
 			</section>
 
 		<!-- Sponsor -->
-			<section id="sponsor" class="main style2 left dark fullscreen">
+			<section id="sponsor" class="main style2 left dark fullscreen mm-slideout">
 				<div class="content box style2">
 					<header>
 						<h2>Sponsor</h2>
@@ -72,7 +116,7 @@
 			</section>
 
 		<!--Gratitude-->
-			<section id="gratitude" class="main style2 right dark fullscreen">
+			<section id="gratitude" class="main style2 right dark fullscreen mm-slideout">
 				<div class="content box style2">
 					<header>
 						<h2>Gratitude</h2>
@@ -83,7 +127,7 @@
 			</section>
 
 		<!-- Journey -->
-			<section id="journey" class="main style3 primary">
+			<section id="journey" class="main style3 primary mm-slideout">
 				<div class="content">
 					<header>
 						<h2>Journey</h2>
@@ -160,7 +204,7 @@
 			</section>
 
 		<!-- Contact -->
-			<section id="contact" class="main style3 secondary">
+			<section id="contact" class="main style3 secondary mm-slideout">
 				<div class="content">
 					<header>
 						<h2>Say Hello.</h2>
