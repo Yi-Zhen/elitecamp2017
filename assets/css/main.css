@@ -1314,6 +1314,10 @@
 				margin-right: 1em;
 			}
 
+			.gallery article hr{
+				display: none;
+			}
+
 			.gallery article:nth-last-child(1n) {
 				-moz-transition-delay: 0.05s;
 				-webkit-transition-delay: 0.05s;
@@ -1683,6 +1687,23 @@
 
 				.gallery article {
 					width: 100%;
+				}
+
+				.gallery article .image{
+					margin-top: 0;
+					margin-bottom: 1em;
+				}
+
+				.gallery article p{
+					margin-top: 1em;
+					margin-left: 1em;
+					margin-right: 1em;
+				}
+
+				.gallery article hr{
+					display: block;
+					margin-bottom: 2em;
+					margin-top: 2em;
 				}
 
 		}
